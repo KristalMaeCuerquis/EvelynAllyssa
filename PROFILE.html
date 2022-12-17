@@ -2,45 +2,48 @@
 <head>
 <style>
 ul {
-life-style-type: none;
-margin: 0;
-padding: 0:
-overflow: hidden;
-background-color: salmon;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: salmon;
 }
-li {
-float: right;
-border-right: 0px solid skyblue;
-}
-li: last-child {
-border-right: none;
-}
-Li a { 
-display: block; 
-color: black;
-text-align: center;
-padding: 14px 16px;
-text-decoration: none;
-}
-Li a: hover:not(.active) {
-background-color: grey;
-}
-.active{
- background-color: grey;
- }
 
-</html>
+li {
+  float: right;
+  border-right:0px solid skyblue;
+}
+
+li:last-child {
+  border-right: none;
+}
+
+li a {
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover:not(.active) {
+  background-color: grey;
+}
+
+.active {
+  background-color: grey;
+}
+</style>
 </head>
-<?style>
 <body>
 
 <ul>
- <li><a> href="CAREER.html">CAREER</a></li>
-  <li><a> href="TRAVEL.html">TRAVEL</a></li>
- <li><a> class="active" href="PROFILE.html">PROFILE</a></li>
- </ul>
- 
- <style>
+  <li><a href="CAREER.html">CAREER</a></li>
+  <li><a href="TRAVEL.HTML">TRAVEL</a></li>
+  <li><a class="active" href="">PROFILE</a></li>
+</ul>
+
+<style>
 * {box-sizing: border-box}
 body {font-family: "Lato", sans-serif;}
 
@@ -52,6 +55,7 @@ body {font-family: "Lato", sans-serif;}
   height: 350px;
   margin-top: 10px;
 }
+
 /* Style the buttons inside the tab */
 .tab button {
   display: block;
@@ -66,6 +70,7 @@ body {font-family: "Lato", sans-serif;}
   font-size: 17px;
   margin-top: 40px;
 }
+
 /* Change background color of buttons on hover */
 .tab button:hover {
   background-color: #ddd;
@@ -104,12 +109,13 @@ body {
 </style>
 </head>
 <body>
-<nav idr="navbar">
-  <div class= "tab">
-  <button class="tablinks" onmouseover="openName(event, 'EVE')">EVEYLYN</button>
-   <button class="tablinks" onmouseover="openName(event, 'AL')"ALLYSSA</button>
+<nav id="navbar">
+
+<div class="tab">
+  <button class="tablinks" onmouseover="openName(event, 'EV')">EVELYN</button>
+  <button class="tablinks" onmouseover="openName(event, 'AL')">ALYSSA</button>
   <button class="tablinks" onmouseover="openName(event, 'KRI')">KRISTAL</button>
-  </div>
+</div>  
 
 <div id="EV" class="tabcontent">
   <h3>HOBBIES</h3>
@@ -127,30 +133,32 @@ body {
 
 <div id="AL" class="tabcontent">
   <h3>HOBBIES</h3>
-  <p>-Playing ONline Games</p>
-  <p>-Watching Vlogs</p>
-   <h3>FAVORITES</h3>
+  <p>-Playing Online Games</p>  
+  <p>-Watching Vlogs</p> 
+  <h3>FAVORITES</h3>
   <p>-Coffee</p>
-  <p>-Tiktoki</p>
-  <p>-Peaceful Place</p>
-   <h3>MOTTO</h3>
-  <p>"I can do all things through christ who streghten me."</p>
-   
+  <p>-TikTok</p>
+  <p>-Peaceful places</p>  
+  <h3>MOTTO</h3>
+  <P>"I can do all things through christ who strenghten me."</P>
 </div>
 
 <div id="KRI" class="tabcontent">
   <h3>HOBBIES</h3>
-  <p>-Playing Call of Duty: Bang Bang</p>
+  <p>-Playing Call of Duty: Mobile</p>
   <p>-Dancing</p>
-  <p>Reading</p> 
-   <h3>FAVORITES</h3>
+  <p>-Reading</p>
+  <h3>FAVORITES</h3>
   <p>-KPOP Idols</p>
   <p>-Anime Lover</p>
-  <p>KDRAMA</p>
+  <p>-Kdrama Lover</p> 
    <h3>MOTTO</h3>
-  <p>"Blessing comes from the laughing home."</p>
-  
-  <script>
+  <p>"Blessings come from the laughing home."</p>
+</div>
+
+<div class="clearfix"></div>
+
+<script>
 function openName(evt, profName) {
   var i, tabcontent, tablinks;
   tabcontent = document.getElementsByClassName("tabcontent");
@@ -165,7 +173,8 @@ function openName(evt, profName) {
   evt.currentTarget.className += " active";
 }
 </script>
-   <section class="main-section" id="About Talyang" >
+         
+                <section class="main-section" id="About Talyang" >
                  <!--basic styling for the headings, better practice to do the same in a css file as the styling is same for all headers-->
                     <h3 style = "background: purple; color: white">ABOUT US</h3>
                
@@ -196,4 +205,3 @@ function openName(evt, profName) {
     </div>
 </div>
 </html>
-
