@@ -8,200 +8,199 @@ ul {
   overflow: hidden;
   background-color: salmon;
 }
-
-li {
-  float: right;
-  border-right:0px solid skyblue;
-}
-
-li:last-child {
-  border-right: none;
-}
-
-li a {
-  display: block;
-  color: black;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-}
-
-li a:hover:not(.active) {
-  background-color: grey;
-}
-
-.active {
-  background-color: grey;
-}
-</style>
-</head>
-<body>
-
-<ul>
-  <li><a href="CAREER.html">CAREER</a></li>
-  <li><a href="TRAVEL.HTML">TRAVEL</a></li>
-  <li><a class="active" href="">PROFILE</a></li>
-</ul>
-
-<style>
-* {box-sizing: border-box}
-body {font-family: "Lato", sans-serif;}
-
-/* Style the tab */
-.tab {
-  float: right;
-  background-color: salmon;
-  width: 15%;
-  height: 350px;
-  margin-top: 10px;
-}
-
-/* Style the buttons inside the tab */
-.tab button {
-  display: block;
-  background-color: inherit;
-  color: black;
-  padding: 22px 12px;
-  width: 100%;
-  border: none;
-  outline: none;
-  text-align: center;
-  cursor: pointer;
-  font-size: 17px;
-  margin-top: 40px;
-}
-
-/* Change background color of buttons on hover */
-.tab button:hover {
-  background-color: #ddd;
-}
-
-/* Create an active/current "tab button" class */
-.tab button.active {
-  background-color: #ccc;
-}
-
-/* Style the tab content */
-.tabcontent {
-  float: left;
-  padding: 0px 12px;
-  border: 0px solid #ccc;
-  width: 50%;
-  border-left: none;
-  height: 300px;
-  display: none;
-  font-family: "Lato",sans-serif;
-  font-size:15px; 
-  color: #05FACD;
-}
-
-/* Clear floats after the tab */
-.clearfix::after {
-  content: "";
-  clear: both;
-  display: table;
-}
-body {
-  background-image:url(back1.jpg);
-  background-repeat: no repeat;
-  background-size: 1900px;
-}
-</style>
-</head>
-<body>
-<nav id="navbar">
-
-<div class="tab">
-  <button class="tablinks" onmouseover="openName(event, 'EV')">EVELYN</button>
-  <button class="tablinks" onmouseover="openName(event, 'AL')">ALYSSA</button>
-  <button class="tablinks" onmouseover="openName(event, 'KRI')">KRISTAL</button>
-</div>  
-
-<div id="EV" class="tabcontent">
-  <h3>HOBBIES</h3>
-  <p>-Watching Anime</p>
-  <p>-Playing Mobile Games</p>
-   <h3>FAVORITES</h3>
-  <p>-Sir Neptale Roa</p>
-  <p>-Siomai</p>
-  <p>-Divergent Series</p>
-  <p>-Stitch</p>
-   <h3>MOTTO</h3>
-  <p>"There is no better representation of beauty, than someone who is unafraid to be herself."</p>
+  
+  li {
+    float: right;
+    border-right: 0px solid skyblue;
+ }
+  
+  li:last-chile {
+    border-right: none;
+ }
+  
+ li a {
+   display: bloack;
+   color: black;
+   text-align: center;
+   padding: 14px 16px;
+   text-decoration: grey;
+  }
+  
+  li a:hover:not(.active) {
+    background-color: grey;
+  }
+  
+  .active {
+    background-color: grey;
    
-</div>
-
-<div id="AL" class="tabcontent">
-  <h3>HOBBIES</h3>
-  <p>-Playing Online Games</p>  
-  <p>-Watching Vlogs</p> 
-  <h3>FAVORITES</h3>
-  <p>-Coffee</p>
-  <p>-TikTok</p>
-  <p>-Peaceful places</p>  
-  <h3>MOTTO</h3>
-  <P>"I can do all things through christ who strenghten me."</P>
-</div>
-
-<div id="KRI" class="tabcontent">
-  <h3>HOBBIES</h3>
-  <p>-Playing Call of Duty: Mobile</p>
-  <p>-Dancing</p>
-  <p>-Reading</p>
-  <h3>FAVORITES</h3>
-  <p>-KPOP Idols</p>
-  <p>-Anime Lover</p>
-  <p>-Kdrama Lover</p> 
-   <h3>MOTTO</h3>
-  <p>"Blessings come from the laughing home."</p>
-</div>
-
-<div class="clearfix"></div>
-
-<script>
-function openName(evt, profName) {
-  var i, tabcontent, tablinks;
-  tabcontent = document.getElementsByClassName("tabcontent");
-  for (i = 0; i < tabcontent.length; i++) {
-    tabcontent[i].style.display = "none";
-  }
-  tablinks = document.getElementsByClassName("tablinks");
-  for (i = 0; i < tablinks.length; i++) {
-    tablinks[i].className = tablinks[i].className.replace(" active", "");
-  }
-  document.getElementById(profName).style.display = "block";
-  evt.currentTarget.className += " active";
+  </style>
+  </head>
+   
+  <ul>
+    <li><a href="CAREER.html">CAREER</a></li>
+    <li><a href="TRAVE.html"><TRAVEL</a></li>
+    <li><a class="active" href=">ROFILE></a><li>
+  </ul>
+      
+ <style>
+  * {box-sizing: border-box}
+ body {font-family: "Latp", sans-serif;}
+      
+ /* Style the tab */
+ .tab {
+    float: right;
+    background-color: salmon;
+    width 15px;
+    height:350px;
+    margin-top: 10px;
+ }
+  /* Style the button inside the tab */
+  .tab button {
+    display: block;
+    background-color: inhereit;
+    color: black;
+    padding: 22px 12px;
+    width: 100px;
+    border: none;
+    outline: none;
+    text-align: center;
+    cursor: pointer;
+    foint-size: 17px;
+    margin-top: 40px;
+ }  
+ 
+ /*Change background color of buttons on hover */
+ .tab button:hover {
+      backgroud-color: #ddd;
+ }
+      
+ /*Create an active/current "tab button" class */
+ .tab button.active {
+ }
+      
+ /*Style the tab content */
+ .tabcontent {
+    float: left;
+    padding: 0px 12px;
+    border: 0px solid #ccc;
+    width: 50%;
+    border-left: none;
+    height: 300px;
+    display: none;
+    font-family: "Lato, san-serif;
+    font-size: 15px;
+    color: #05FACCD;
 }
-</script>
-         
-                <section class="main-section" id="About Talyang" >
-                 <!--basic styling for the headings, better practice to do the same in a css file as the styling is same for all headers-->
-                    <h3 style = "background: purple; color: white">ABOUT US</h3>
-               
+
+/* clear floats after the tab */
+ .clearfix:after {
+   content: "";
+   clear: both;
+   diplay: table;
+}
+ 
+ body { 
+   background-image:url(back1.jpeg);
+   background-repaet: no repeat;
+   background-size: 1900px;
+}
+           
+</style>
+</head>
+<body>
+ <nav id="navbar">
+   
+   <div class="tab">
+     <button class="tablinks" onmuouseover="openName(event, 'EVE')"EVELYN</button>
+     <button class="tablinks" onmuouseover="openName(event, 'AL')"ALLYSSA</button>
+     <button class="tablinks" onmuouseover="openName(event, 'KRI')"KRISTAL</button>
+   </div>
+   
+   <div id="EVE" class="tabcontent">
+     <h3>HOBBIES</h3>
+     <p>-Watching Anime</p>
+     <h3>FAVORITES</h3>
+     <p>-Sir Neptale Roa</p>
+     <p>-Siomai</p>
+     <p>-Divergent Series</p>
+     <p>Stitch</p>
+     <h3>MOTTO</h3>
+     <p>"There is no better representative of beauty, than someone who is unafraid to be herself."</p>
+  
+  </div>
+     
+   <div id="AL" class="tabcontent">
+     <h3>HOBBIES</h3>
+     <p>-Playing Online Games</p>
+     <p>-Watching Vlogs</p>
+     <h3>FAVORITES</h3>
+     <p>-Coffee</p>
+     <p>-Peaceful places</p>
+     <h3>MOTTO</h3>
+     <p>"I can do all things through christ who stregthen me."</p>
+ </div>  
+ 
+     <div id="KRI" class="tabcontent">
+     <h3>HOBBIES</h3>  
+     <p>-Playing Call of Duty: Bang Bang</p>
+     <p>-Danicing</p>
+     <p>-Reading</p>
+     <h3>FAVORITES</h3>
+     <p>-Anime Lover</p>
+     <p>-Kpop Idols</p>
+     <h3>MOTTO</h3> 
+     <p>"Blessing comes from the laughing home"."<p>
+</div>  
+   
+   <div class"clearfix"></div>
+   
+   <script>
+  funtion openName(evt. profName) {
+    var i, tabcontent, tablinks;
+    tabcontent = document,getElementsByClassName(tabcontent");
+    for (i = 0; i < tabcontent.length; i++) {
+      tabcontent[i].style.display = "none";
+ }
+ tablinks = document,getElementsByClassName(tabcontent");
+    for (i = 0; i < tabcontent.length; i++) { 
+      tablinks[i].className = tablinks[i].className.replace(" active", "");
+ }
+    
+ document,getElementsById(profName).style.display = "block";
+    evt.currentTarget.className += " active";
+    
+</style>
+    
+             <section class="main-section" id="About us">
+             <!--Basic styling for the headings, better practice to do the same in a css file as the styling is same for all headers-->
+               <h3 style = "background: purple; color: white">ABOUT US</h3>
 <center>
 <img src="sia1.jpg" alt="My picture" width=250px height=250px>
 </center>
-
-<hr color="black" size=2px width=80%>
-                <section class="main-section" id="Together with family">
-                    <h3 style = "background: purple; color: white">Evelyn Francisco</h3>
-                    <h4>Age: 22 years old</h4>
-                    <h4>Birthday: November 29, 2000</h4>
-                    <h4>Address: Zone 5, Buluarte Tagoloan Misamis Oriental</h4>
-
-                <section class="main-section" id="Together with family">
-                    <h3 style = "background: purple; color: white">Kristal Mae Cuerquis</h3>
-                    <h4>Age: 20 years old</h4>
-                    <h4>Birthday: April 29, 2002</h4>
-                    <h4>Address: Zone 4, Cagayan de Oro City, Misamis Oriental</h4>
-                    
-                 <section class="main-section" id="Together with family">
-                    <h3 style = "background: purple; color: white">Allyssa Kate Baslot</h3>
-                    <h4>Age: 22 years old</h4>
-                    <h4>Birthday: September 30, 2001</h4>
-                    <h4>Address: Zone 4, Cagayan de Oro City, Misamis Oriental</h4>
-            </main>
-        </div>
+    
+<hr color="black" size=12px width=80%>
+                 <Section class="main-section" id="Evelyn">
+                      <h3 style ="background: purple; color:white">Evelyn Francisco</h3>
+                      <h4>Age: 22 years old</h4>
+                      <h4>Birthday: November 29, 20000</h4>
+                      <h4>Address: ZOne 5, Buluart Tagoloan Misamis Oriental</h4>
+                
+                     <Section class="main-section" id="Allyssa">
+                      <h3 style ="background: purple; color:white">Allyssa Kate Baslot</h3>
+                      <h4>Age: 21 years old</h4>
+                      <h4>Birthday: September 30, 2001</h4>
+                      <h4>Address: ZOne 4, Agusan Cagayan de Oro City</h4>
+    
+                      <Section class="main-section" id="Kristal">
+                      <h3 style ="background: purple; color:white">Kristal Mae Cuerquis</h3>
+                      <h4>Age: 20 years old</h4>
+                      <h4>Birthday: April 29, 2002</h4>
+                      <h4>Address: ZOne 4, Agusan Cagayan de Oro City</h4>
+             </main>
+         </div>
+      </div>
     </div>
-</div>
-</html>
+    </html>
+    
+
+    
