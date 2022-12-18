@@ -39,8 +39,8 @@ li a:hover:not(.active) {
 
 <ul>
   <li><a href="CAREER.html">CAREER</a></li>
-  <li><a href="TRAVEL.HTML">TRAVEL</a></li>
-  <li><a class="active" href="">PROFILE</a></li>
+  <li><a class="active" href="TRAVEL.html">TRAVEL</a></li>
+  <li><a href="PROFILE.html">PROFILE</a></li>
 </ul>
 
 <style>
@@ -50,6 +50,7 @@ body {font-family: "Lato", sans-serif;}
 /* Style the tab */
 .tab {
   float: right;
+  border: px solid magenta;
   background-color: salmon;
   width: 15%;
   height: 350px;
@@ -65,7 +66,7 @@ body {font-family: "Lato", sans-serif;}
   width: 100%;
   border: none;
   outline: none;
-  text-align: center;
+  text-align: center ;
   cursor: pointer;
   font-size: 17px;
   margin-top: 40px;
@@ -85,14 +86,11 @@ body {font-family: "Lato", sans-serif;}
 .tabcontent {
   float: left;
   padding: 0px 12px;
-  border: 0px solid #ccc;
-  width: 50%;
+  border: px solid #ccc;
+  width: 70%;
   border-left: none;
-  height: 300px;
+  height: 350px;
   display: none;
-  font-family: "Lato",sans-serif;
-  font-size:15px; 
-  color: #05FACD;
 }
 
 /* Clear floats after the tab */
@@ -101,92 +99,104 @@ body {font-family: "Lato", sans-serif;}
   clear: both;
   display: table;
 }
- background-image: url "https://www.creativefabrica.com/wp-content/uploads/2020/12/11/Time-to-travel-background-Graphics-7122111-1.jpg");
- background-repeat: no repeat;
- background-size :1300px
- 
+body {
+  background-image:url(https://www.creativefabrica.com/wp-content/uploads/2020/12/11/Time-to-travel-background-Graphics-7122111-1.jpg);
+  background-repeat: no repeat;
+  background-size: 1300px;
 }
+
 </style>
 </head>
 <body>
 <nav id="navbar">
 
-<div class="tab">;
-<button class="tablinks" onmouseover="openName"(event. 'JP')">JAPAN</button>
-<button class="tablinks" onmouseover="openName"(event. 'HK')">HONGKONG</button>
-<button class="tablinks" onmouseover="openName"(event. 'SK')">SOUTH KOREA</button>
+<div class="tab">
+  <button class="tablinks" onmouseover="openName(event, 'JP')">JAPAN</button>
+  <button class="tablinks" onmouseover="openName(event, 'HK')">HONGKONG</button>
+  <button class="tablinks" onmouseover="openName(event, 'SK')">SOUTH KOREA</button>
 </div>
 
-<div id="JP" class="tabcontent"
+
+<div id="JP" class="tabcontent">
   <h3>EVELYN</h3>
 <center>
-<img src="japan.jpg" alt="My Pitures" width=500px height=500 px>
+<img src="japan.jpg" alt="My picture" width=500px height=500px>
 </div>
 </center>
-<div id="HK" class="tabcontent"
+
+<div id="HK" class="tabcontent">
   <h3>ALLYSSA</h3>
-<center>
-<img src="hongkong.jpg" alt="My Pitures" width=500px height=500 px>
-</div>
+  <center>
+<img src="hongkong.jpg" alt="My picture" width=500px height=500px>
 </center>
-<div id="SK" class="tabcontent"
+</div>
+
+<div id="SK" class="tabcontent">
   <h3>KRISTAL</h3>
 <center>
-<img src="korea.jpg" alt="My Pitures" width=500px height=500 px>
+<img src="korea.jpg" alt="My picture" width=500px height=500px>
 </div>
 </center>
-<div class= "clearfix"></div>
+
+<div class="clearfix"></div>
 
 <script>
-Function openName(evt, profName) {
-var i, tabcontent, tablinks;
-tabcontent = document. getElementsByClassName("tabcontent");
-for (i=o; i <tabcontent.length; i++) {
-   tabcontent[i].style.display = "none";
-   
-}
-tablinks= document.getEnlementByClassName("tablinks");
-for (i=0; <tablinks.length; i++) {
-tablinks[i].classname = tablinks [i].classname.replace ("active,"");
-}
-document.getElementById(profName).style.display = "block";
-evt.currentTarget.classname +="active";
+function openName(evt, profName) {
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablinks");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" active", "");
+  }
+  document.getElementById(profName).style.display = "block";
+  evt.currentTarget.className += " active";
 }
 </script>
+
 <div class="clearfix"></div>
-function openName( evt, profName) {
-var i,tabcontent , tablinks;
-for(i=o; i <tabcontent.length; i++){
-tabcontent[i].style.display ="none";
-}
-tablinks= document.getElementByClassName("tablinks");
-for(i=o; i <tabcontent.length; i++){
-tablinks [i].classname = tabloinks[i].className.replacce("active"),"");
-}
-document.getElementById(profName).style.display = "block";
-evt.currentTarget.classname += "active":
+
+<script>
+function openName(evt, profName) {
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablinks");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" active", "");
+  }
+  document.getElementById(profName).style.display = "block";
+  evt.currentTarget.className += " active";
 }
 </script>
-</main>
+
+   
+   <div class="clearfix"></div>
+
+<script>
+function openName(evt, profName) {
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablinks");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" active", "");
+  }
+  document.getElementById(profName).style.display = "block";
+  evt.currentTarget.className += " active";
+}
+</script>
+
+                    
+                
+            </main>
+        </div>
+    </div>
 </div>
 </html>
-
-
-
-
- 
-
-
-
-
-
-
-
-
-
-
-
- 
-
-
-
